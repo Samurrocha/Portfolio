@@ -1,0 +1,18 @@
+#menuButton {
+  margin: 10px;
+  position: fixed;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 200px;
+  height: 100%;
+}
+
+#closeMenuButton {
+  width: 10%;
+  text-align: center;
+  margin-left: 75%;
+}
