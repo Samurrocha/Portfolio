@@ -4,15 +4,43 @@
 }
 
 .menu {
-  display: flex;
+  position: fixed;
   flex-direction: column;
   background-color: white;
-  width: 200px;
-  height: 100%;
+  border-radius: 5%;
+  margin: 1%;
+  width: 15%;
+  height: 50%;
 }
 
 #closeMenuButton {
-  width: 10%;
+  display: flex;
+  justify-self: end;
+}
+
+button:focus:hover{
+  outline: none;
+  border:none;
+}
+
+#list{
+  list-style-type: none;
+  margin:10px;
+  color: white;
   text-align: center;
-  margin-left: 75%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
+
+.listElement{
+  transition: transform 0.5s ease, box-shadow 1s ease;
+  padding: 5%;
+  border-radius: 30%;
+  margin: 2%;
+  background-color: rgb(77, 1, 77);
+}
+
+li:hover {
+  transform: perspective(200px) rotateX(20deg) rotateY(10deg);
+  box-shadow: 0px 10px 0px rgb(177, 177, 177);
 }

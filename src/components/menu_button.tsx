@@ -29,18 +29,18 @@ export default function MenuButton() {
                     <div className="menu">
 
                         <button id="closeMenuButton" onClick={toggleMenu}>
-                            <GrClose size={20}/>
+                            <GrClose size={20} />
                         </button>
-                        <ul>
-                            <li>
+                        <ul id='list'>
+                            <li className='listElement'>
                                 aloha
                             </li>
 
-                            <li>
+                            <li className='listElement'>
                                 joana
                             </li>
 
-                            <li>
+                            <li className='listElement'>
                                 hawai
                             </li>
                         </ul>
