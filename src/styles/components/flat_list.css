@@ -1,0 +1,11 @@
+.flatListContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.item{
+    background-color: white;
+}

@@ -33,15 +33,27 @@ export default function MenuButton() {
                         </button>
                         <ul id='list'>
                             <li className='listElement'>
-                                aloha
+                                Home
                             </li>
 
                             <li className='listElement'>
-                                joana
+                                KNOWLEDGES
                             </li>
 
                             <li className='listElement'>
-                                hawai
+                                PROJECTS
+                            </li>
+                            
+                            <li className='listElement'>
+                                CONTACTS
+                            </li>
+
+                            <li className='listElement'>
+                                PROJECTS
+                            </li>
+
+                            <li className='listElement'>
+                                PROFESSIONAL EXPERIENCES
                             </li>
                         </ul>
 
