@@ -1,5 +1,6 @@
 import '../styles/pages/App.css'
 import MenuButton from '../components/menu_button'
+import personalPhoto from '../assets/terno.jpg';
 
 function App() {
 
@@ -19,6 +20,11 @@ function App() {
                                  On this page, you wil be able to get know me better, my skills and my motivations
         </p>
       </div>
+
+    <div>
+    <img src={personalPhoto} id='personalPhoto' />
+    </div>
+
       <div style={{marginTop:"800px"}}><p>saaaaaaaaaa</p></div>
     </>
   )

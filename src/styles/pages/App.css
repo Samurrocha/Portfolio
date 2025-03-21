@@ -9,8 +9,8 @@
   flex-direction: column;
   margin:0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 1000%;
   background-color: black;
   box-shadow: inset 0px 0px 50px 0px rgba(117, 2, 117, 0.7);
 }
@@ -23,7 +23,6 @@
   width: 25%;
   margin-left: auto;
   margin-right: auto; /* Centraliza apenas a segunda div */
-  
 }
 
 #presentationText {
@@ -33,4 +32,11 @@
   text-align: justify;
   margin-left: 20%;
   margin-top: 5%;
+}
+
+#personalPhoto{
+  margin: 10%;
+  height: 57%;
+  width: fit-content;
+  background-color: blue;
 }

@@ -18,7 +18,12 @@
   justify-self: end;
 }
 
-button:focus:hover{
+button{
+  outline: none;
+  border: none;
+}
+
+button:focus{
   outline: none;
   border:none;
 }
