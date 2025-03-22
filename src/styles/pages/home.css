@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    box-shadow: inset 0px 0px 50px 0px rgba(117, 2, 117, 0.7);
+  }
+  
+  .header {
+    color: aliceblue;
+    font-family: cursive;
+    margin-top: 2%;
+    height: 25%;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #presentationText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: purple;
+    text-align: justify;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  
+  
+  #body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    color: white;
+  }
+  
+  #personalPhoto {
+    width: 30%;
+    align-self: flex-start;
+    margin: 10%;
+    border-radius: 50%;
+  }
+  
+  #projectsDivision{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+  }
+  
+  

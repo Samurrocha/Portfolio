@@ -1,0 +1,62 @@
+/* Estilos gerais do Footer */
+.footer {
+    width: 100%;
+    background-color: white; /* Fundo cinza escuro */
+    color: purple;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-content {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+  }
+  
+  .footer-page {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-link {
+    font-size: 1.125rem;
+    color: #e2e8f0; /* Cinza claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: white; /* Altera para branco ao passar o mouse */
+  }
+  
+  /* Responsividade para telas maiores (dispositivos desktops) */
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .footer-content {
+      text-align: left;
+    }
+  
+    .footer-links {
+      margin-top: 0;
+    }
+  }
+  

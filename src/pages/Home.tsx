@@ -1,9 +1,11 @@
-import '../styles/pages/App.css'
 import MenuButton from '../components/menu_button'
-import FlatList from '../components/flat_list'
 import personalPhoto from '../assets/terno.jpg';
+import CarrouselList from '../components/carrousel_list'
+import FlatList from '../components/flat_list';
+import Footer from '../components/footer';
+import '../styles/pages/home.css'
 
-function App() {
+export default function Home() {
 
   return (
     <>
@@ -22,13 +24,19 @@ function App() {
         </p>
       </div>
 
-      <img src={personalPhoto} id='personalPhoto' />
+      <div id='body'>
+        <img src={personalPhoto} id='personalPhoto' />
 
-      <h2 id='projectsDivision'>most relevant projects</h2>
-      <FlatList />
+      <h2>WHAT I AM WORKING WITH</h2>
+        <FlatList/>
+
+        <h2 id='projectsDivision'>most relevant projects</h2>
+        <CarrouselList />
+      </div>
+
+
+      <Footer />
 
     </>
   )
 }
-
-export default App
