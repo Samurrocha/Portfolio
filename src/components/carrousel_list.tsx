@@ -50,7 +50,7 @@ export default function CarrouselList() {
 
   return (
     <div id="presentationContainer">
-      <button onClick={setBeforeProject}>
+      <button onClick={setBeforeProject} className='passButton'>
         <MdNavigateBefore size={40}/>
       </button>
       <div id='project'>
@@ -73,8 +73,8 @@ export default function CarrouselList() {
         </AnimatePresence>
       </div>
 
-      <button onClick={setNextProject}>
-        <MdNavigateNext size={40}/>
+      <button onClick={setNextProject} className='passButton'>
+        <MdNavigateNext size={35}/>
       </button>
 
     </div>
