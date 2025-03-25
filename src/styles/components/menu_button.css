@@ -6,7 +6,7 @@
 .menu {
   position: fixed;
   flex-direction: column;
-  background-color: gray;
+  background-color: white;
   border-radius: 5%;
   margin: 1%;
   width: 15%;
@@ -16,6 +16,7 @@
 #closeMenuButton {
   display: flex;
   justify-self: end;
+  background-color: gray;
 }
 
 button{
@@ -27,6 +28,7 @@ button:focus{
   outline: none;
   border:none;
 }
+
 
 #list{
   list-style-type: none;
@@ -47,5 +49,5 @@ button:focus{
 
 li:hover {
   transform: perspective(200px) rotateX(20deg) rotateY(10deg);
-  box-shadow: 0px 10px 0px white;
+  box-shadow: 0px 10px 0px gray;
 }
