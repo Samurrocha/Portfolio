@@ -6,7 +6,7 @@
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -47,7 +47,7 @@
   @media (min-width: 768px) {
     .footer {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       text-align: left;
     }
   
