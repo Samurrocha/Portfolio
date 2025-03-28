@@ -65,20 +65,26 @@
   flex-direction: column;
 }
 
+.presentation>h1{
+  font-size: 2rem;
+}
+
 .presentation>h3 {
   width: fit-content;
   padding: 0 1% 0 1%;
+  font-size: 1rem;
   margin-bottom: 1%;
   background-color: rgb(94, 93, 93);
   border: 1px solid white;
   border-radius: 10rem;
 }
 
-#presentationText {
 
+#presentationText {
   margin-top: 5%;
+  margin-bottom: 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large;
+  font-size:1rem;
   color: purple;
 }
 

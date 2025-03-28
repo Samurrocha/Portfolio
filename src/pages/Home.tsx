@@ -9,20 +9,16 @@ export default function Home() {
 
   return (
     <>
-
       <div>
         <MenuButton />
       </div>
 
       <div className='header'>
         <div className='flatMenu'>
-
           <button className='optionMenu'>Who am I</button>
           <button className='optionMenu'>Projects</button>
           <button className='optionMenu'>Skills</button>
           <button className='optionMenu'>Contact</button>
-
-
         </div>
 
         <div className='presentationHeader'>
@@ -136,7 +132,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
       <Footer />
 
