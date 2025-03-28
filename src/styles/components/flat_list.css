@@ -31,11 +31,12 @@ height: 70vh;
     margin-top: 5%;
     background-color: black;
     overflow: hidden;
+    font-size: 1rem;
 
 }
 
 h2{
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 P{

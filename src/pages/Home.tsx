@@ -27,10 +27,9 @@ export default function Home() {
             <h1>Hello, I am Samuel</h1>
 
             <p id='presentationText'>
-              My name is Samuel and this is my personal site. I am a FullStack software developer, nowadays I have been working and learning technologies
-              in the area of softaware development, artificial intelligence, data science and clound<br />
-              Here you will find some projects made by me and ongoing projects.<br />
-              On this page, you wil be able to get know me better, my skills and my motivations
+              My name is Samuel and this is my personal site. I am a FullStack software developer, nowadays I have been working and learning technologies in the area of softaware 
+              development, artificial intelligence, data science and clound. Here you will find some projects made by me and ongoing projects. On this page, you wil be able to get 
+              know me better, my skills and my motivations.
             </p>
           </div>
           <img src={personalPhoto} id='personalPhoto' />

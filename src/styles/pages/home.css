@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +8,6 @@
 #root {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -30,7 +29,6 @@
 .optionMenu {
   background-color: gray;
   border: 0.2rem solid black;
-  border-top: None !important;
   color: white;
   width: 10%;
 }
@@ -41,20 +39,13 @@
   box-shadow: 0px 10px 0px white;
 }
 
-.optionMenu:focus {
-  border: 0.3rem solid red;
-  color: yellow;
-  outline: none !important;
-}
-
-
 .presentationHeader {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   color: aliceblue;
   font-family: cursive;
-  height: 50vh;
+  height: auto;
   width: 100%;
   margin-top: 5%;
 }
@@ -65,13 +56,13 @@
   flex-direction: column;
 }
 
-.presentation>h1{
+.presentation > h1 {
   font-size: 2rem;
 }
 
-.presentation>h3 {
+.presentation > h3 {
   width: fit-content;
-  padding: 0 1% 0 1%;
+  padding: 0 1%;
   font-size: 1rem;
   margin-bottom: 1%;
   background-color: rgb(94, 93, 93);
@@ -79,40 +70,39 @@
   border-radius: 10rem;
 }
 
-
-#presentationText {
+.presentation > p {
+  text-align: justify;
+  font-size: 1.2rem;
   margin-top: 5%;
-  margin-bottom: 10%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size:1rem;
   color: purple;
 }
 
+
 #personalPhoto {
-  width: 20%;
-  height: 80%;
-  border-radius: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 #body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
   color: white;
 }
 
 h2 {
   text-align: center;
   color: white;
-  font-size: xx-large;
+  font-size: 2rem;
 }
 
 .skillContainer {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 5rem 1rem;
 }
 
 .skillCategory {
@@ -120,22 +110,19 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.skillCategory> ul >li{
+.skillCategory > ul > li {
   margin-top: 2em;
 }
 
-.skillCategory>ul{
+.skillCategory > ul {
   margin: 2em;
 }
 
-
-.skillCategory>h3 {
+.skillCategory > h3 {
   color: white;
   border: 0.2rem solid white;
-  border-top: None;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -146,116 +133,49 @@ h2 {
   margin-left: 2em;
 }
 
-/*fit to tablet*/
+/* Media Queries */
 
-@media (max-width: 768px) {
-  .flatMenu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .optionMenu {
-    width: 50%;
-  }
-
+/* Tablets */
+@media (max-width: 1024px) {
   .presentationHeader {
     flex-direction: column;
-    height: 100vh;
   }
 
   .presentation {
-    width: 80%;
-    align-items: center;
-  }
-
-  #personalPhoto {
-    width: 50%;
-    height: 50%;
-  }
-
-  #body {
-    margin-top: 5%;
+    width: 70%;
   }
 
   .skillContainer {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
-
-  .skillCategory {
-    margin-top: 5rem;
-  }
-
 }
 
-/*fit to large phone*/
-
+/* Large Phones */
 @media (max-width: 425px) {
   .optionMenu {
     width: 80%;
   }
 
-  .presentationHeader {
-    height: 100vh;
-  }
-
   .presentation {
     width: 90%;
-    align-items: center;
   }
 
   #personalPhoto {
     width: 70%;
-    height: 40%;
   }
-
-  #body {
-    margin-top: 5%;
-  }
-
-  .skillContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skillCategory {
-    margin-top: 5rem;
-  }
-
 }
 
-/*fit to small phone*/
-
-@media (max-width: 375px) {
+/* Small Phones */
+@media (max-width: 320px) {
   .optionMenu {
-    width: 90%;
-  }
-
-  .presentationHeader {
-    height: 100vh;
+    width: 95%;
   }
 
   .presentation {
-    width: 90%;
-    align-items: center;
+    width: 100%;
   }
 
   #personalPhoto {
-    width: 70%;
-    height: 40%;
+    width: 80%;
   }
-
-  #body {
-    margin-top: 5%;
-  }
-
-  .skillContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skillCategory {
-    margin-top: 5rem;
-  }
-
 }
