@@ -88,8 +88,6 @@
   border-radius: 100%;
 }
 
-
-
 #body {
   display: flex;
   flex-direction: column;
@@ -108,17 +106,150 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .skillCategory {
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+
 }
 
+.skillCategory> ul >li{
+  margin-top: 2em;
+}
+
+.skillCategory>ul{
+  margin: 2em;
+}
+
+
 .skillCategory>h3 {
+  color: white;
   border: 0.2rem solid white;
   border-top: None;
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.subSkill {
+  list-style-type: '- ';
+  color: purple;
+  margin-left: 2em;
+}
+
+/*fit to tablet*/
+
+@media (max-width: 768px) {
+  .flatMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .optionMenu {
+    width: 50%;
+  }
+
+  .presentationHeader {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .presentation {
+    width: 80%;
+    align-items: center;
+  }
+
+  #personalPhoto {
+    width: 50%;
+    height: 50%;
+  }
+
+  #body {
+    margin-top: 5%;
+  }
+
+  .skillContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillCategory {
+    margin-top: 5rem;
+  }
+
+}
+
+/*fit to large phone*/
+
+@media (max-width: 425px) {
+  .optionMenu {
+    width: 80%;
+  }
+
+  .presentationHeader {
+    height: 100vh;
+  }
+
+  .presentation {
+    width: 90%;
+    align-items: center;
+  }
+
+  #personalPhoto {
+    width: 70%;
+    height: 40%;
+  }
+
+  #body {
+    margin-top: 5%;
+  }
+
+  .skillContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillCategory {
+    margin-top: 5rem;
+  }
+
+}
+
+/*fit to small phone*/
+
+@media (max-width: 375px) {
+  .optionMenu {
+    width: 90%;
+  }
+
+  .presentationHeader {
+    height: 100vh;
+  }
+
+  .presentation {
+    width: 90%;
+    align-items: center;
+  }
+
+  #personalPhoto {
+    width: 70%;
+    height: 40%;
+  }
+
+  #body {
+    margin-top: 5%;
+  }
+
+  .skillContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillCategory {
+    margin-top: 5rem;
+  }
+
 }

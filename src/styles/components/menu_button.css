@@ -1,6 +1,13 @@
-#menuButton {
-  margin: 10px;
+#openMenuButton{
+  border: none;
+  outline: none ;
+  margin: 2rem;
   position: fixed;
+}
+
+#openMenuButton:hover{
+  transform: scale(1.1);
+  border: 0.2em solid purple;
 }
 
 .menu {
@@ -13,22 +20,13 @@
   height: 50%;
 }
 
-#closeMenuButton {
+#closeMenuButton,#closeMenuButton:focus {
+  border: 0.2em solid red ;
+  outline: none; 
   display: flex;
   justify-self: end;
   background-color: gray;
 }
-
-button{
-  outline: none;
-  border: none;
-}
-
-button:focus{
-  outline: none;
-  border:none;
-}
-
 
 #list{
   list-style-type: none;
@@ -50,4 +48,26 @@ button:focus{
 li:hover {
   transform: perspective(200px) rotateX(20deg) rotateY(10deg);
   box-shadow: 0px 10px 0px gray;
+}
+
+
+/*fit to tablet*/
+@media(max-width: 768px){
+  .menu {
+    width: 30%;
+  }
+}
+
+/*fit to large phone*/
+@media(max-width: 425px){
+  .menu {
+    width: 50%;
+  }
+}
+
+/*fit to small phone*/
+@media(max-width: 375px){
+  .menu {
+    width: 70%;
+  }
 }

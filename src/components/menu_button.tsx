@@ -17,11 +17,11 @@ export default function MenuButton() {
 
                 {!menu ? (
 
-                    <div id="menuButton">
-                        <button onClick={toggleMenu}>
+                        <button 
+                        id='openMenuButton'
+                        onClick={toggleMenu}>
                             <FaBars size={20} />
                         </button >
-                    </div>
 
 
                 ) : (

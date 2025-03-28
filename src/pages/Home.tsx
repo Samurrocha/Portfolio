@@ -51,46 +51,91 @@ export default function Home() {
       </div>
 
 
-      <h2>My Skills</h2>
-      <div className='skillContainer'>
-        <div className='skillCategory'>
-          <h3>FrontEnd</h3>
-          <ul>
-            <li>marcao teste</li>
-            <li>marcao teste</li>
-            <li>marcao teste</li>
-            <li>marcao teste</li>
-          </ul>
+      <section className='skillSection'>
+        <h2>My Skills</h2>
+        <div className='skillContainer'>
+          <div className="skillCategory">
+            <h3>FrontEnd</h3>
+            <ul>
+              <li>
+                JavaScript / TypeScript
+                <ul className='subSkill'>
+                  <li>React</li>
+                  <li>React Native</li>
+                  <li>NextJs</li>
+                  <li>Angular</li>
+                </ul>
+              </li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div className='skillCategory'>
+            <h3>BackEnd</h3>
+            <ul>
+              <li>
+                Java
+                <ul className='subSkill'>
+                  <li>SpringBoot</li>
+                </ul>
+              </li>
+              <li>
+                Python
+                <ul className='subSkill'>
+                  <li>Django</li>
+                  <li>FastAPI</li>
+                </ul>
+              </li>
+              <li>
+                Node
+                <ul className='subSkill'>
+                  <li>Express.js</li>
+                </ul>
+              </li>
+              <li>
+                DataBase SQL
+                <ul className='subSkill'>
+                  <li>PostgreSQL</li>
+                  <li>MySQL</li>
+                  <li>Oracle</li>
+                  <li>SQLServer</li>
+                </ul>
+              </li>
+
+              <li>
+                DataBase NoSQL
+                <ul className='subSkill'>
+                  <li>MongoDb</li>
+                </ul>
+              </li>
+
+              <li>
+                RestFull API
+              </li>
+            </ul>
+          </div>
+          <div className='skillCategory'>
+            <h3>Mobile</h3>
+            <ul>
+              <li>oracle</li>
+              <li>oracle</li>
+              <li>oracle</li>
+              <li>oracle</li>
+            </ul>
+          </div>
+          <div className='skillCategory'>
+            <h3>Data & Cloud</h3>
+            <ul>
+              <li>mircorsoft</li>
+              <li>mircorsoft</li>
+              <li>mircorsoft</li>
+              <li>mircorsoft</li>
+              <li>mircorsoft</li>
+            </ul>
+          </div>
         </div>
-        <div className='skillCategory'>
-          <h3>BackEnd</h3>
-          <ul>
-            <li>Amazon</li>
-            <li>Amazon</li>
-            <li>Amazon</li>
-            <li>Amazon</li>
-          </ul>
-        </div>
-        <div className='skillCategory'>
-          <h3>Mobile</h3>
-          <ul>
-            <li>oracle</li>
-            <li>oracle</li>
-            <li>oracle</li>
-            <li>oracle</li>
-          </ul>
-        </div>
-        <div className='skillCategory'>
-          <h3>Data & Cloud</h3>
-          <ul>
-            <li>mircorsoft</li>
-            <li>mircorsoft</li>
-            <li>mircorsoft</li>
-            <li>mircorsoft</li>
-            <li>mircorsoft</li>
-          </ul>
-        </div>
-      </div>
+      </section>
 
 
       <Footer />

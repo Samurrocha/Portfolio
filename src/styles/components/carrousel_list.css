@@ -23,8 +23,6 @@ h2 {
   font-size: xx-large;
 }
 
-
-
 .container {
   display: flex;
   justify-content: center;
@@ -61,4 +59,37 @@ h2 {
   transform: scale(1.1);
   border: 0.1rem solid white;
   background-color: rgb(99, 99, 228);
+}
+
+/*fit to tablet*/
+@media (max-width: 768px) {
+  #project {
+    width: 80%;
+  }
+  .container {
+    height: 50px;
+  }
+  .box {
+    width: 50%;
+  }
+  .passButton{
+    width: 10%;
+    height: 20%;
+  }
+}
+
+/*fit to large phone*/
+@media(max-width: 425px){
+  .passButton{
+    width: 20%;
+    height: 30%;
+  }
+}
+
+/*fit to small phone*/
+@media(max-width: 320px){
+  .passButton{
+    width: 30%;
+    height: 40%;
+  }
 }
