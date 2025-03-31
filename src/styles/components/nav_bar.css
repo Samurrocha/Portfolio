@@ -1,0 +1,33 @@
+.nav-bar{
+    padding: 0.2em 0 0.2em 0;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    position: fixed;
+    margin-top: 2rem;
+    border: 0.1em solid white;
+    border-radius: 100rem;
+    background-color: rgba(22, 20, 31, 0.9);
+}
+
+.option {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, purple, white );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.option:hover {
+    transform: rotate(10deg) scale(1.1);
+    transition: transform 0.2s ease, box-shadow 1s ease;
+    box-shadow: 0px 2px 0px white;
+    border-radius: 50rem;
+  }
+
+.option:focus {
+    outline: none;
+    border: 0.2em solid yellow;
+    border-top: none;
+  }

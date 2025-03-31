@@ -1,0 +1,10 @@
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.contact-container > a {
+    margin-right: 1rem;
+}	

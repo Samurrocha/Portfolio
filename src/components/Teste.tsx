@@ -1,16 +1,14 @@
+import '../styles/components/teste.css'
+
 export default function Teste(){
 
     return(
 
-        <>
-            <div style={{background:"red"}}>
-ddddddddddddddsfsd
+            <div  className="teste" id="teste">
 
 <p>sadsssssssss</p>
 
             </div>
         
-        </>
-
     )
 }

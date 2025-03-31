@@ -1,20 +1,36 @@
-import Home from './pages/Home'
-import Teste from './pages/Teste'
-import { Routes, Route } from 'react-router'
+import { Element, Link } from 'react-scroll'
+import Home from './components/Home'
+import Teste from './components/Teste'
+import NavBar from './components/nav_bar'
 import './App.css'
 
 
 function App() {
 
   return (
-    <>
-  <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/teste'element={<Teste/>} />
-  </Routes>
-      
+    <div className='container'>
+      <NavBar />
 
-    </>
+      <Element name="home">
+        <section>
+          <Home />
+        </section>
+      </Element>
+
+      <Element name="projects">
+        <section>
+          <Teste />
+        </section>
+      </Element>
+
+      <Element name="experiences">
+        <section>
+
+          <h1>Experiences</h1>
+        </section>
+      </Element>
+
+    </div>
   )
 }
 
