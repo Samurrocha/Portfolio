@@ -1,6 +1,6 @@
-import { Element, Link } from 'react-scroll'
+import { Element } from 'react-scroll'
 import Home from './components/Home'
-import Teste from './components/Teste'
+import About from './components/About'
 import NavBar from './components/nav_bar'
 import './App.css'
 
@@ -16,10 +16,14 @@ function App() {
           <Home />
         </section>
       </Element>
-
+      <Element name="about">
+        <section>
+          <About />
+        </section>
+      </Element>
       <Element name="projects">
         <section>
-          <Teste />
+    <h1>aaa</h1>
         </section>
       </Element>
 

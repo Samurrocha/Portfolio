@@ -9,7 +9,10 @@ export default function NavBar() {
                     <Link to="home" className="link" smooth={true} duration={500}>HOME</Link>
                 </button>
                 <button className="option">
-                    <Link to="projects" className="link" smooth={true} duration={500}>ABOUT</Link>
+                    <Link to="about" className="link" smooth={true} duration={500}>ABOUT</Link>
+                </button>
+                <button className="option">
+                    <Link to="projects" className="link" smooth={true} duration={500}>PROJECTS</Link>
                 </button>
                 <button className="option">
                     <Link to="experiences" className="link" smooth={true} duration={500}>SKILLS</Link>
