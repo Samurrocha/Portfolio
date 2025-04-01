@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(230deg, rgb(71, 53, 71) 10%, #161a20 80%);
   color: white;
 }
@@ -17,7 +17,7 @@
 .header {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 3rem;
+  margin-bottom: 10vh;
 }
 
 #logo {
@@ -32,7 +32,6 @@
   align-items: center;
   color: aliceblue;
   font-family: cursive;
-  margin-top: 5%;
 }
 
 .presentation {
@@ -66,8 +65,7 @@
 .separator {
   width: 70vw;
   height: 0.2vh;
-  margin: 10rem auto 0 auto;
-
+  margin: 10vh auto 0 auto;
   border: none;
   background: radial-gradient(circle, #fff, purple);
   box-shadow: 0 0 10px white;

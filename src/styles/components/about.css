@@ -14,9 +14,8 @@
 }
 
 .about > p {
-    width: 40vw;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1vw, 2rem);;
     margin-top: 5%;
     color: purple;
     margin: auto;
