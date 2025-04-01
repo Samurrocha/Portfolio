@@ -27,7 +27,6 @@
 .presentationContainer {
   display: flex;
   flex-wrap: wrap;
-  /* Adicionado para evitar quebra de layout em telas menores */
   justify-content: space-evenly;
   align-items: center;
   color: aliceblue;
@@ -65,7 +64,7 @@
 .separator {
   width: 70vw;
   height: 0.2vh;
-  margin: 10vh auto 0 auto;
+  margin: 20vh auto 10vh auto;
   border: none;
   background: radial-gradient(circle, #fff, purple);
   box-shadow: 0 0 10px white;

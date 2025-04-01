@@ -1,13 +1,24 @@
-.nav-bar{
-    padding: 0.2em 0 0.2em 0;
-    display: flex;
-    width: 20%;
-    justify-content: space-evenly;
-    position: fixed;
-    margin-top: 2rem;
-    border: 0.1em solid white;
-    border-radius: 100rem;
-    background-color: rgba(22, 20, 31, 0.9);
+.nav-bar {
+  padding: 0.2em 0 0.2em 0;
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+  position: fixed;
+  margin-top: 2rem;
+  border: 0.1em solid white;
+  border-radius: 100rem;
+  background-color: rgba(22, 20, 31, 0.9);
+  z-index: 1;
+  
+  /* Transição de opacidade para efeito de fade */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 2.5s ease; /* Efeito suave de transição de opacidade */
+  pointer-events: none; /* Garante que a div não capture eventos quando invisível */
+}
+
+.nav-bar.visible {
+  opacity: 1; /* Torna a div visível com opacidade 1 */
+  pointer-events: auto; /* Habilita interação quando visível */
 }
 
 .option {

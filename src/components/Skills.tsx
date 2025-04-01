@@ -3,14 +3,16 @@ import { SiJavascript, SiTypescript, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiAn
 import { FaJava } from "react-icons/fa";
 import { VscAzure, VscAzureDevops } from 'react-icons/vsc';
 
-type Skill = {
-    name: string;
-    description: string;
-    icon: React.ReactNode;
-    highlight?: boolean; // A propriedade highlight é opcional
-};
 
-const SkillsSection = () => {
+export default function SkillsSection() {
+
+    type Skill = {
+        name: string;
+        description: string;
+        icon: React.ReactNode;
+        highlight?: boolean; // A propriedade highlight é opcional
+    };
+
     const skills: { [category: string]: { [subcategory: string]: Skill[] } } = {
         Frontend: {
             " .": [
@@ -42,13 +44,13 @@ const SkillsSection = () => {
 
         "Mobile": {
             Frameworks: [
-                {name: "expo", description: "Framework for building React Native apps", icon: <SiExpo color='#61DAFB' />},
+                { name: "expo", description: "Framework for building React Native apps", icon: <SiExpo color='#61DAFB' /> },
                 { name: "React Native", description: "Framework for building native apps using React", icon: <SiReact color='#61DAFB' /> },
                 { name: "Flutter", description: "UI toolkit for building natively compiled applications", icon: "🦄" },
-                { name: "Kotlin", description: "Modern programming language for Android", icon: <SiKotlin/> },
+                { name: "Kotlin", description: "Modern programming language for Android", icon: <SiKotlin /> },
                 { name: "Android", description: "Mobile operating system based on Linux", icon: <SiAndroid color='#3DDC84' /> },
-                { name: "iOS", description: "Mobile operating system by Apple", icon: <SiIos/> },
-                
+                { name: "iOS", description: "Mobile operating system by Apple", icon: <SiIos /> },
+
             ]
         },
         "DataBase": {
@@ -64,32 +66,32 @@ const SkillsSection = () => {
             DevOps: [
                 { name: "Git", description: "Distributed version control system", icon: <SiGit color='#F05032' /> },
                 { name: "GitHub", description: "Platform for hosting and managing Git repos", icon: <SiGithub /> },
-                { name: "Docker", description: "Containerization platform", icon: <SiDocker color='#2496ED'/> },
-                { name: "Kubernetes", description: "Container orchestration platform", icon: <SiKubernetes color='#326CE5'/> }
+                { name: "Docker", description: "Containerization platform", icon: <SiDocker color='#2496ED' /> },
+                { name: "Kubernetes", description: "Container orchestration platform", icon: <SiKubernetes color='#326CE5' /> }
             ],
             Cloud: [
-                { name: "AWS", description: "Amazon Web Services cloud platform", icon: <SiAmazonwebservices/> },
-                { name: "Azure", description: "Microsoft cloud platform", icon: <VscAzure/> },
-                { name: "Google Cloud", description: "Google's cloud computing services", icon: <SiGooglecloud/> }
+                { name: "AWS", description: "Amazon Web Services cloud platform", icon: <SiAmazonwebservices /> },
+                { name: "Azure", description: "Microsoft cloud platform", icon: <VscAzure /> },
+                { name: "Google Cloud", description: "Google's cloud computing services", icon: <SiGooglecloud /> }
             ]
         },
         "AI & Data Science": {
             "AI": [
-                { name: "TensorFlow", description: "Open-source library for machine learning", icon: <SiTensorflow/> },
-                { name: "PyTorch", description: "Open-source machine learning library", icon: <SiPytorch/> },
-                { name: "Keras", description: "High-level neural networks API", icon: <SiKeras/> },
-                { name: "Scikit-learn", description: "Machine learning library for Python", icon: <SiScikitlearn/> },
+                { name: "TensorFlow", description: "Open-source library for machine learning", icon: <SiTensorflow /> },
+                { name: "PyTorch", description: "Open-source machine learning library", icon: <SiPytorch /> },
+                { name: "Keras", description: "High-level neural networks API", icon: <SiKeras /> },
+                { name: "Scikit-learn", description: "Machine learning library for Python", icon: <SiScikitlearn /> },
             ],
-            "Data Science":[
-                { name: "Pandas", description: "Data manipulation and analysis library for Python", icon: <SiPandas/> },
-                { name: "NumPy", description: "Library for numerical computations in Python", icon: <SiNumpy/> },
-                {name:"SciPy", description:"Library for scientific and technical computing in Python", icon: <SiScipy/>}
+            "Data Science": [
+                { name: "Pandas", description: "Data manipulation and analysis library for Python", icon: <SiPandas /> },
+                { name: "NumPy", description: "Library for numerical computations in Python", icon: <SiNumpy /> },
+                { name: "SciPy", description: "Library for scientific and technical computing in Python", icon: <SiScipy /> }
             ]
         }
     };
 
     return (
-        <div className="skills-container">
+        <div className="skills">
             <h2 className="skills-title">MY SKILLS</h2>
             <div className="skills-grid">
                 {Object.entries(skills).map(([category, subcategories]) => (
@@ -122,5 +124,3 @@ const SkillsSection = () => {
 
     )
 }
-
-export default SkillsSection;
