@@ -16,10 +16,13 @@ export default function About() {
                     </a>
                 </button>
             </div>
-            <p>My journey in tech started early, and the thrill of solving problems with innovative solutions has always driven me.
-                The more I explore new technologies, the more my passion for learning and growing in this field intensifies.
-                Since 2022, I’ve been fully immersed in this work, constantly seeking new challenges and opportunities to expand my expertise.
-                Currently, I focus on a few key technology stacks, with a primary focus on backend and frontend development, mobile development, AI and machine learning, cloud computing, and data science
+            <p>
+                I am Samuel, a versatile developer passionate about solving complex challenges with innovative solutions.
+                My journey in tech started early, and since 2022, I have been fully immersed in exploring new technologies and expanding my expertise.
+                I specialize in a full spectrum of technologies, from frontend development that captivates users to robust backend systems that power seamless experiences.
+                I also build mobile applications that bring functionality to life and leverage artificial intelligence to drive smart solutions.
+                Additionally, I harness cloud infrastructures for scalable, secure deployments and apply data science to extract meaningful insights.
+                The thrill of learning and growing in this ever-evolving field drives me, and I am always seeking new challenges to push the boundaries of what’s possible.
             </p>
 
 

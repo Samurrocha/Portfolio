@@ -1,8 +1,10 @@
 import { Element } from 'react-scroll'
 import Home from './components/Home'
 import About from './components/About'
+import Skills from './components/Skills'
 import NavBar from './components/nav_bar'
 import './App.css'
+import Projects from './components/Projects'
 
 
 function App() {
@@ -21,19 +23,16 @@ function App() {
           <About />
         </section>
       </Element>
+      <Element name="skills">
+        <section>
+          <Skills />
+        </section>
+      </Element>
       <Element name="projects">
         <section>
-    <h1>aaa</h1>
+          <Projects />
         </section>
       </Element>
-
-      <Element name="experiences">
-        <section>
-
-          <h1>Experiences</h1>
-        </section>
-      </Element>
-
     </div>
   )
 }

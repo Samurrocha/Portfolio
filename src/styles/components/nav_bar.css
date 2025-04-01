@@ -23,7 +23,7 @@
     transform: rotate(10deg) scale(1.1);
     transition: transform 0.2s ease, box-shadow 1s ease;
     box-shadow: 0px 2px 0px white;
-    border-radius: 50rem;
+    border-radius: 10rem;
   }
 
 .option:focus {
