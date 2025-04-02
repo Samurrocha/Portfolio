@@ -1,9 +1,7 @@
 import { FileText } from "lucide-react";
 import pdfFile from '../assets/curriculo.pdf'
 import '../styles/components/About.css'
-
 export default function About() {
-
     return (
         <div className='about' id='about'>
             <h1>About me</h1>
@@ -22,7 +20,7 @@ export default function About() {
                 I specialize in a full spectrum of technologies, from frontend development that captivates users to robust backend systems that power seamless experiences.
                 I also build mobile applications that bring functionality to life and leverage artificial intelligence to drive smart solutions.
                 Additionally, I harness cloud infrastructures for scalable, secure deployments and apply data science to extract meaningful insights.
-                The thrill of learning and growing in this ever-evolving field drives me, and I am always seeking new challenges to push the boundaries of what’s possible.
+                The thrill of learning and growing in this ever-evolving field drives me, and I am always seeking new challenges to push the boundaries of what’s possible. 
             </p>
 
 
