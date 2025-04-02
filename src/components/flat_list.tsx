@@ -32,7 +32,6 @@ export default function FlatList() {
                         <Link to="/teste" className='link'>Visite outra página</Link> {/* Link para uma página interna */}
                     </div>
                 </div>
-
                 <div className='element'>
                     <FaBrain size={50} />
                     <div className='elementContent'>

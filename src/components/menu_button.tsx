@@ -23,7 +23,6 @@ export default function MenuButton() {
                             <FaBars size={20} />
                         </button >
 
-
                 ) : (
 
                     <div className="menu">

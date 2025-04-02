@@ -12,7 +12,6 @@ export default function Message() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-
         try {
             const response = await fetch("https://email-server-cddblw.fly.dev/send-email", {
                 method: "POST",

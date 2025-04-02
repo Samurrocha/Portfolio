@@ -76,7 +76,6 @@ export default function CarrouselList() {
       <button onClick={setNextProject} className='passButton'>
         <MdNavigateNext size={35}/>
       </button>
-
     </div>
   );
 }

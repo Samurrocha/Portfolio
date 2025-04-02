@@ -121,4 +121,5 @@ export default function SkillsSection() {
         </div>
 
     )
+    
 }

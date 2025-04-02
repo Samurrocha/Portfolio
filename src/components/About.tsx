@@ -23,7 +23,6 @@ export default function About() {
                 The thrill of learning and growing in this ever-evolving field drives me, and I am always seeking new challenges to push the boundaries of what’s possible. 
             </p>
 
-
         </div>
     )
 }

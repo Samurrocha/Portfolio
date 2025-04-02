@@ -14,7 +14,6 @@ export default function Contacts() {
                 <a href="http://github.com/samurrocha" target="_blank" rel="GitHub"> <FaGithub size={20} color="white"/> </a>
                 <a href="https://wa.me/5511999999999" target="_blank" rel="Phone"> <FaPhone size={20} color="white"/> </a>
             </div>
-
         </>
     )
 }
