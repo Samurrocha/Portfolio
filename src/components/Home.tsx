@@ -1,6 +1,6 @@
 import personalPhoto from '../assets/terno(1).png';
 import logo from '../assets/logo.png'
-import '../styles/components/home.css'
+import '../styles/components/Home.css'
 import Contacts from './contacts';
 import {
   Code,  // Frontend

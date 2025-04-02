@@ -1,6 +1,6 @@
 import { Link } from "react-scroll"
-import '../styles/components/nav_bar.css'
 import { useEffect, useState } from "react"
+import '../styles/components/nav_bar.css'
 
 export default function NavBar() {
 

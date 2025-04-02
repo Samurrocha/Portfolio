@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import '../styles/components/carrousel_list.css';
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md"; // Material Design
+import '../styles/components/carrousel_list.css';
 
 export default function CarrouselList() {
   const [currentIndex, setCurrentIndex] = useState(0);
