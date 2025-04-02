@@ -1,5 +1,32 @@
-.container {
+.projects {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, black, rgb(70, 69, 69));
+  color: white;
+}
+
+.projectContainer{
+  margin-top: 10vh;
+  flex-grow: 1; /* Permite que o grid ocupe o espaço restante */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px,1fr));
+  grid-template-rows: 0fr 0fr; /* Primeira linha menor */
+  gap: 2rem;
+}
+
+.project{
+  padding: 1vw;
+border: 0.2rem solid transparent;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 0px purple;
+  width: fit-content;
+  height: fit-content;
+}
+
+.projectMedia{
+  background-color: white;
+  width: 20vw;
 }

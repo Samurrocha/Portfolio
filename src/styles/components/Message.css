@@ -1,0 +1,51 @@
+.messageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, black, rgb(49, 39, 58));
+    color: white;
+}
+
+.messageContainer > h1{
+    margin-top: 5vh;
+    font-family: cursive;
+}
+
+.message{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1rem solid purple;
+    border-radius: 1rem;
+    border-top: none;
+    width: 50vw;
+    height: 70vh;
+    margin-top: 10vh;
+}
+
+.message > h2{
+margin: 5vh;
+}
+
+.message > input, textarea{
+    padding: 1vw;
+    margin: 2vh;
+    min-width: 40vw;
+    max-width: 40vw;
+    height: 5vh;
+    background: none;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    border-top: none;
+    outline: none;
+    color: white;
+    
+}
+
+.message > textarea{
+    min-height: 15vh;
+    max-height: 20vh;
+}

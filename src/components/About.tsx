@@ -9,7 +9,7 @@ export default function About() {
             <h1>About me</h1>
 
             <div className='resume animate-floating'>
-                <h1>Resume</h1>
+                <h1>CV</h1>
                 <button>
                     <a href={pdfFile} target="_blank" rel="resume">
                         <FileText size={50} color="white" />

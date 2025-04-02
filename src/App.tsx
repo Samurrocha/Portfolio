@@ -1,8 +1,10 @@
 import { Element } from 'react-scroll'
+import NavBar from './components/nav_bar'
 import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
-import NavBar from './components/nav_bar'
+import Message from './components/Message'
+import Footer from './components/footer'
 import './App.css'
 import Projects from './components/Projects'
 
@@ -10,7 +12,7 @@ import Projects from './components/Projects'
 function App() {
 
   return (
-    <div className='container'>
+    <div className='appContainer'>
       <NavBar />
 
       <Element name="home">
@@ -33,6 +35,12 @@ function App() {
           <Projects />
         </section>
       </Element>
+      <Element name="message">
+        <section>
+          <Message />
+        </section>
+      </Element>
+      <Footer />
     </div>
   )
 }
