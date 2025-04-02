@@ -1,12 +1,12 @@
 import { Element } from 'react-scroll'
 import NavBar from './components/nav_bar'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Message from './components/Message'
+import Home from './components/home'
+import About from './components/about'
+import Skills from './components/skills'
+import Message from './components/message'
 import Footer from './components/footer'
 import './App.css'
-import Projects from './components/Projects'
+import Projects from './components/projects'
 
 
 function App() {
