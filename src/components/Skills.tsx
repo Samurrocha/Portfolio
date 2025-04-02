@@ -1,7 +1,7 @@
 import { SiJavascript, SiTypescript, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiAngular, SiTailwindcss, SiPython, SiNodedotjs, SiSpring, SiDjango, SiFastapi, SiExpress, SiMysql, SiPostgresql, SiMongodb, SiGit, SiGithub, SiKubernetes, SiDocker, SiAmazonwebservices, SiGooglecloud, SiExpo, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPandas, SiNumpy, SiScipy } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
 import { VscAzure } from 'react-icons/vsc';
-import '../styles/components/Skills.css'
+import '../styles/components/skills.css'
 
 
 export default function SkillsSection() {

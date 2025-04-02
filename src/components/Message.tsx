@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/components/Message.css';
+import '../styles/components/message.css';
 
 export default function Message() {
     const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
