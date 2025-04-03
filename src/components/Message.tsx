@@ -4,7 +4,6 @@ import '../styles/components/message.css';
 
 export default function Message() {
     const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-    const [mensagem, setMensagem] = useState('');
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [sentSucess, setSentSucess] = useState(false);
@@ -42,14 +41,12 @@ export default function Message() {
 
             setSentSucess(true);
 
-            const data = await response.json();
-            setMensagem(data.message);
             setFormData({ name: '', email: '', subject: '', message: '' });
         } catch (error) {
             if (error instanceof Error) {
-                console.log(error.message); setMensagem("" + error.message);
+                console.log(error.message);
             } else {
-                setMensagem("could not send message, try again later!");
+                console.log(error)
             }
         }
         setLoading(false);
