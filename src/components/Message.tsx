@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import '../styles/components/message.css';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default function Message() {
     const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [sentSucess, setSentSucess] = useState(false);
+
+    const API_URL = process.env.EMAIL_API_URL || '';
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,7 +35,8 @@ export default function Message() {
         setLoading(true);
 
         try {
-            const response = await fetch("http://localhost:8080/api/send-email", {
+            if(!API_URL)console.error('API_URL is not defined');
+            const response = await fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
