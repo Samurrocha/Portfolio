@@ -1,36 +1,58 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 import '../styles/components/message.css';
 
 export default function Message() {
     const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
     const [mensagem, setMensagem] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
+    const [sentSucess, setSentSucess] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+
+    useEffect(() => {
+        if (submitted) {
+            const timer = setTimeout(() => {
+                setSubmitted(false); // Reseta para voltar ao botão
+            }, 8000);
+            return () => clearTimeout(timer); // Limpa o timer se o componente desmontar
+        }
+    }, [submitted]);
+
+
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        setSubmitted(true)
+        setLoading(true);
+
         try {
-            const response = await fetch("https://email-server-cddblw.fly.dev/send-email", {
+            const response = await fetch("http://localhost:8080/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
             });
 
-            if (!response.ok) throw new Error("Erro ao enviar mensagem, tente novamente!");
+            if (!response.ok) throw new Error("could not send message, try again later!")
+
+            setSentSucess(true);
 
             const data = await response.json();
             setMensagem(data.message);
             setFormData({ name: '', email: '', subject: '', message: '' });
         } catch (error) {
             if (error instanceof Error) {
-                setMensagem("Erro: " + error.message);
+                console.log(error.message); setMensagem("" + error.message);
             } else {
-                setMensagem("Erro desconhecido");
+                setMensagem("could not send message, try again later!");
             }
         }
+        setLoading(false);
 
     };
 
@@ -81,9 +103,35 @@ export default function Message() {
                     required
                 />
 
-                <button type="submit">Send</button>
+                <div>
+                    {submitted && !loading ? (
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0, opacity: 0 }}
+                            transition={{ type: "spring", stiffness: 100 }}
+                            className={sentSucess ? "success-message" : "error-message"}
+                            aria-live="polite"
+                        >
+                            {sentSucess ? (
+                                <p>✅ Formulário enviado com sucesso!</p>
+                            ) : (
+                                <p>❌ Ocorreu um erro ao enviar o formulário. Tente novamente.</p>
+                            )}
+                        </motion.div>
+                    ) : (
+                        <motion.button
+                            type="submit"
+                            disabled={loading}
+                            whileHover={{ scale: loading ? 1 : 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="submit-button"
+                        >
+                            {loading ? <div className="skeleton-loader"></div> : "Enviar"}
+                        </motion.button>
+                    )}
+                </div>
 
-                {mensagem && <p>{mensagem}</p>}
             </form>
 
 

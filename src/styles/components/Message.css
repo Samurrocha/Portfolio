@@ -1,4 +1,4 @@
-.messageContainer{
+.messageContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,12 +8,12 @@
     color: white;
 }
 
-.messageContainer > h1{
+.messageContainer>h1 {
     margin-top: 5vh;
     font-family: cursive;
 }
 
-.message{
+.message {
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
@@ -26,11 +26,12 @@
     margin-top: 10vh;
 }
 
-.message > h2{
-margin: 5vh;
+.message>h2 {
+    margin: 5vh;
 }
 
-.message > input, textarea{
+.message>input,
+textarea {
     padding: 1vw;
     margin: 2vh;
     min-width: 40vw;
@@ -42,10 +43,111 @@ margin: 5vh;
     border-top: none;
     outline: none;
     color: white;
-    
+
 }
 
-.message > textarea{
+.message>textarea {
     min-height: 15vh;
     max-height: 20vh;
+}
+
+
+
+/* Container principal */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa;
+    /* Cor neutra para fundo */
+}
+
+/* Botão de envio */
+.submit-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #0056b3, #00408a);
+    transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+    background: #adb5bd;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Loader animado no botão */
+.skeleton-loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+.success-message,
+.error-message {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.2);
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.2);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Efeito de fade-in para a mensagem */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
