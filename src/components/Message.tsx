@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import '../styles/components/message.css';
-import dotenv from 'dotenv';
-dotenv.config();
 
 export default function Message() {
     const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -10,7 +8,7 @@ export default function Message() {
     const [submitted, setSubmitted] = useState(false);
     const [sentSucess, setSentSucess] = useState(false);
 
-    const API_URL = process.env.EMAIL_API_URL || '';
+    const API_URL = import.meta.env.VITE_EMAIL_EMAIL_URL;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -35,7 +33,7 @@ export default function Message() {
         setLoading(true);
 
         try {
-            if(!API_URL)console.error('API_URL is not defined');
+            if (!API_URL) console.error('API_URL is not defined');
             const response = await fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
