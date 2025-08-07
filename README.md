@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules..=
 
 Currently, two official plugins are available:
 
@@ -45,7 +45,7 @@ export default tseslint.config({
     'react-dom': reactDom,
   },
   rules: {
-    // other rules...
+    // other rules..
     // Enable its recommended typescript rules
     ...reactX.configs['recommended-typescript'].rules,
     ...reactDom.configs.recommended.rules,
