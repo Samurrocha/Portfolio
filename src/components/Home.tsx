@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <div className='home' id='home'>
       <div className='header'>
-        <img src={logo} id='logo' />
         <Contacts />
       </div>
 
