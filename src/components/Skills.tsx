@@ -1,4 +1,4 @@
-import { SiJavascript, SiTypescript, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiAngular, SiTailwindcss, SiPython, SiNodedotjs, SiSpring, SiDjango, SiFastapi, SiExpress, SiMysql, SiPostgresql, SiMongodb, SiGit, SiGithub, SiKubernetes, SiDocker, SiAmazonwebservices, SiGooglecloud, SiExpo, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPandas, SiNumpy, SiScipy } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiAngular, SiTailwindcss, SiPython, SiNodedotjs, SiSpring, SiDjango, SiFastapi, SiExpress, SiMysql, SiPostgresql, SiMongodb, SiGit, SiGithub, SiKubernetes, SiDocker, SiAmazonwebservices, SiGooglecloud, SiExpo, SiPandas, SiNumpy } from 'react-icons/si';
 import { FaJava } from "react-icons/fa";
 import { VscAzure } from 'react-icons/vsc';
 import '../styles/components/skills.css'
@@ -74,16 +74,16 @@ export default function SkillsSection() {
             ]
         },
         "AI & Data Science": {
-            "AI": [
-                { name: "TensorFlow", description: "Open-source library for machine learning", icon: <SiTensorflow color="#FF6F00" /> },
-                { name: "PyTorch", description: "Open-source machine learning library", icon: <SiPytorch color="#EE4C2C" /> },
-                { name: "Keras", description: "High-level neural networks API", icon: <SiKeras color="#D00000" /> },
-                { name: "Scikit-learn", description: "Machine learning library for Python", icon: <SiScikitlearn color="#F7931E" /> },
-            ],
+            // "AI": [
+            //     { name: "TensorFlow", description: "Open-source library for machine learning", icon: <SiTensorflow color="#FF6F00" /> },
+            //     { name: "PyTorch", description: "Open-source machine learning library", icon: <SiPytorch color="#EE4C2C" /> },
+            //     { name: "Keras", description: "High-level neural networks API", icon: <SiKeras color="#D00000" /> },
+            //     { name: "Scikit-learn", description: "Machine learning library for Python", icon: <SiScikitlearn color="#F7931E" /> },
+            // ],
             "Data Science": [
                 { name: "Pandas", description: "Data manipulation and analysis library for Python", icon: <SiPandas color='#150458' style={{backgroundColor:"white", padding:"0.1em", borderRadius:"10em"}}/> },
                 { name: "NumPy", description: "Library for numerical computations in Python", icon: <SiNumpy color='#013243' /> },
-                { name: "SciPy", description: "Library for scientific and technical computing in Python", icon: <SiScipy color='#8CAAE6' /> }
+                // { name: "SciPy", description: "Library for scientific and technical computing in Python", icon: <SiScipy color='#8CAAE6' /> }
             ]
         }
     };
