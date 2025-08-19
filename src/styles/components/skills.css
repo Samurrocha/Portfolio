@@ -92,3 +92,10 @@
   box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3); /* Sombra mais forte no hover */
   transform: translateY(-5px);
 }
+
+/* Celulares */
+@media (max-width: 767px) {
+  .skills {
+    overflow: scroll;
+  }
+}

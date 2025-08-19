@@ -1,73 +1,95 @@
 .projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(circle, black, rgb(70, 69, 69));
-  color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, black, rgb(70, 69, 69));
+    color: white;
 }
 
 .projectContainer {
-  margin-top: 10vh;
-  display: grid;
-  /* Grid responsivo com até 3 colunas, se couberem */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* Linhas ajustam altura automaticamente conforme conteúdo */
-  grid-auto-rows: auto;
-  gap: 5rem;
-  /* Espaçamento entre itens */
-  padding: 0 2rem;
-  /* Pequeno padding lateral */
+    position: relative;
+    margin-top: 10vh;
+    display: grid;
+    /* Grid responsivo com até 3 colunas, se couberem */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Linhas ajustam altura automaticamente conforme conteúdo */
+    grid-auto-rows: auto;
+    gap: 5rem;
+    /* Espaçamento entre itens */
+    padding: 0 2rem;
+    /* Pequeno padding lateral */
 }
 
 .project {
-  border: 0.2rem solid transparent;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px 0px purple;
-  /* Ajuste para ocupar a largura da coluna */
-  width: 100%;
-  height: auto;
-  /* Ajusta altura conforme conteúdo */
-  display: flex;
-  flex-direction: column;
-  background-color: #1a1a1a;
-  /* Para diferenciar do fundo, opcional */
-  padding: 1rem;
-  box-sizing: border-box;
+    border: 0.2rem solid transparent;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0px purple;
+    /* Ajuste para ocupar a largura da coluna */
+    width: 100%;
+    height: auto;
+    /* Ajusta altura conforme conteúdo */
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    /* Para diferenciar do fundo, opcional */
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    
+}
+
+.projectLinks>a{
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.projectLinks>a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    border-bottom: 2px solid #000; 
 }
 
 .project:hover {
-  transform: scale(1.1);;
-  transition: transform 0.2s ease, box-shadow 1s ease;
-  transform-origin: center;
-  overflow: visible;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    border: 0.2rem solid purple;
+    box-shadow: 0 0 20px 5px purple;
+    z-index: 10;
 }
 
 /* Se for o último da linha → vai para a esquerda */
 .project:last-child:hover {
-  transform: scale(1.1) translateX(-10%);
+    transform: scale(1.1) translateX(-10%);
 }
 
 .project:first-child:hover {
-  transform: scale(1.1) translateX(10%);
+    transform: scale(1.1) translateX(10%);
 }
 
-
-.projectMedia {
+/* .projectMedia {
   overflow: hidden;
-}
-
-.projectImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  /* recorta e aproxima */
-  transform: scale(1);
-  /* 1.2 = 120% */
-  transform-origin: center;
-  /* centraliza o zoom */
-  border-radius: 0;
-  /* deixa reto, a moldura arredonda se precisar */
+} */
+
+.projectMedia {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+
+.projectImage {
+    width: 100%;
+    height: 100%;
 
 }
