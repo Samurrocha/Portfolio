@@ -8,25 +8,67 @@
   color: white;
 }
 
-.projectContainer{
+.projectContainer {
   margin-top: 10vh;
-  flex-grow: 1; /* Permite que o grid ocupe o espaço restante */
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px,1fr));
-  grid-template-rows: 0fr 0fr; /* Primeira linha menor */
-  gap: 2rem;
+  /* Grid responsivo com até 3 colunas, se couberem */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Linhas ajustam altura automaticamente conforme conteúdo */
+  grid-auto-rows: auto;
+  gap: 5rem;
+  /* Espaçamento entre itens */
+  padding: 0 2rem;
+  /* Pequeno padding lateral */
 }
 
-.project{
-  padding: 1vw;
-border: 0.2rem solid transparent;
+.project {
+  border: 0.2rem solid transparent;
   border-radius: 1rem;
   box-shadow: 0 0 20px 0px purple;
-  width: fit-content;
-  height: fit-content;
+  /* Ajuste para ocupar a largura da coluna */
+  width: 100%;
+  height: auto;
+  /* Ajusta altura conforme conteúdo */
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  /* Para diferenciar do fundo, opcional */
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.projectMedia{
-  background-color: white;
-  width: 20vw;
+.project:hover {
+  transform: scale(1.1);;
+  transition: transform 0.2s ease, box-shadow 1s ease;
+  transform-origin: center;
+  overflow: visible;
+}
+
+/* Se for o último da linha → vai para a esquerda */
+.project:last-child:hover {
+  transform: scale(1.1) translateX(-10%);
+}
+
+.project:first-child:hover {
+  transform: scale(1.1) translateX(10%);
+}
+
+
+.projectMedia {
+  overflow: hidden;
+  width: 100%;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* recorta e aproxima */
+  transform: scale(1);
+  /* 1.2 = 120% */
+  transform-origin: center;
+  /* centraliza o zoom */
+  border-radius: 0;
+  /* deixa reto, a moldura arredonda se precisar */
+
 }
