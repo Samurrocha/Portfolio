@@ -18,8 +18,6 @@ export default function Projects() {
                 <div className='project'>
                     <div className='projectMedia'>
                         <CarrouselList projectsImages={projectImages} />
-
-                        {/* <img src={Login} className='projectImage' /> */}
                     </div>
                     <h2>Go-Planeje</h2>
                     <p>

@@ -10,16 +10,15 @@ export default function CarrouselList({ projectsImages }: CarrouselListProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const setNextProject = () => {
-
-    setCurrentIndex((currentIndex + 1) % projectsImages.length)
-  }
+    setCurrentIndex(prevIndex => (prevIndex + 1) % projectsImages.length);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % projectsImages.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+    return () => clearInterval(interval);
   }, [projectsImages.length]);
 
   return (
