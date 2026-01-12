@@ -7,7 +7,6 @@ import {
   Smartphone,  // Mobile
   Cloud,  // Cloud & DevOps
   BrainCircuit,  // Inteligência Artificial
-  BarChart3  // Data Science
 } from "lucide-react";
 
 
@@ -24,7 +23,7 @@ export default function Home() {
           <h1>Hello, I am Samuel Rodrigues</h1>
 
           <p id='presentationText'>
-            I am Samuel, a developer specialized in frontend, backend, mobile, data science, AI, and cloud technologies. I transform challenges into robust solutions.          </p>
+            I am Samuel, a developer specialized in frontend, backend, mobile, artificial intelligence, and cloud technologies. I transform challenges into robust solutions.          </p>
         </div>
         <img src={personalPhoto} id='personalPhoto' />
       </div>
@@ -44,11 +43,7 @@ export default function Home() {
         </div>
         <div className='stack'>
           <BrainCircuit size={50} color="white" />
-          <h1>AI & Machine Learning</h1>
-        </div>
-        <div className='stack'>
-          <BarChart3 size={50} color="white" />
-          <h1>Data Science</h1>
+          <h1>Artificial Intelligence</h1>
         </div>
       </div>
 

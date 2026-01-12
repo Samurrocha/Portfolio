@@ -1,5 +1,5 @@
 import { FileText } from "lucide-react";
-import pdfFile from '../assets/curriculo.pdf'
+import pdfFile from '../assets/Curriculo_Samuel_Lima.pdf'
 import '../styles/components/about.css'
 export default function About() {
     return (
