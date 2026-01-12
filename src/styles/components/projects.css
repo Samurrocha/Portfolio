@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
     height: 100%;
     width: 100%;
     background: radial-gradient(circle, black, rgb(70, 69, 69));
@@ -39,24 +40,25 @@
     overflow: hidden;
     cursor: pointer;
     text-align: justify;
+    
 }
 
 .projectLinks {
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
-    
+
 }
 
-.projectLinks>a{
+.projectLinks>a {
     font-weight: bold;
     border-bottom: 2px solid #000;
 }
 
-.projectLinks>a:hover{
+.projectLinks>a:hover {
     transform: scale(1.1);
     transition: transform 0.3s;
-    border-bottom: 2px solid #000; 
+    border-bottom: 2px solid #000;
 }
 
 .project:hover {
@@ -92,4 +94,16 @@
     width: 100%;
     height: 100%;
 
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
+    .project{
+        font-size: 2vw;
+    }
+   
 }

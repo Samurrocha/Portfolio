@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between; /* Ajusta o espaço entre os elementos internos */
   align-items: stretch; /* Garante que os elementos internos ocupem o espaço disponível */
+  overflow-y: auto;
 }
 
 .skills-title {
